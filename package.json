@@ -1,0 +1,26 @@
+{
+  "name": "vite-plugin-inject-virtual-content",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview"
+  },
+  "main": "./dist/vite-plugin-inject-virtual-content.umd.js",
+  "module": "./dist/vite-plugin-inject-virtual-content.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vite-plugin-inject-virtual-content.es.js",
+      "require": "./dist/vite-plugin-inject-virtual-content.umd.js"
+    }
+  },
+  "keywords": [
+    "vite",
+    "plugin"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^4.2.3",
+    "vite": "^2.2.3"
+  }
+}
