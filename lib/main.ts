@@ -48,7 +48,7 @@ interface Options  {
 
 const virtualIdFactory = (id: string) => `virtual-resource-${id}`
 
-export default function VitePluginInjectVirtualContent(options: Options) {
+export default function provider(options: Options) {
     const {
         token: virtualToken, 
         content: virtualContent
